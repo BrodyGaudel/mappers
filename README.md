@@ -21,15 +21,21 @@ These instructions will help you include Mappers in your project.
 ## Usage
 
 // Example code demonstrating the usage of Mappers
+```java
 Mappers<MyEntity, MyDTO> mappers = new Mappers<>();
+```
 
 // Entity to DTO mapping
+```java
 MyEntity entity = new MyEntity();
 MyDTO dto = mappers.fromEntity(entity, MyDTO.class);
+```
 
 // DTO to Entity mapping
+```java
 MyDTO dto = new MyDTO();
 MyEntity entity = mappers.fromDTO(dto, MyEntity.class);
+```
 
 ### Installation
 
